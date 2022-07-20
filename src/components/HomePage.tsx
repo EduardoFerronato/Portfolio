@@ -1,5 +1,7 @@
+import { Heading } from "@chakra-ui/react"
+
 export const HomePage = () => {
   return (
-    <h1>hello</h1>
+    <Heading>Hello</Heading>
   )
 }
