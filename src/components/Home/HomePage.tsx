@@ -1,0 +1,30 @@
+import { Flex, Heading } from "@chakra-ui/react"
+import SidebarSimple from "../Sidebar/SidebarSimple"
+
+export const HomePage = () => {
+  return (
+    <Flex>
+      <SidebarSimple />
+      <Heading>
+        <svg width="599" height="132" viewBox="0 0 599 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="JJ" d="M1 129.5V2H82V19H21V56H57V71.5H21V113H82V129.5H1Z" stroke="white" />
+          <path d="M93 2V129C181.416 129 177.899 2 93 2Z" stroke="white" />
+          <path d="M428 4V131C516.416 131 512.899 4 428 4Z" stroke="white" />
+          <path d="M107 29V103C158.689 103 156.634 29 107 29Z" stroke="white" />
+          <path d="M442 31V105C493.689 105 491.634 31 442 31Z" stroke="white" />
+          <path d="M169 129V2H184V113.256H210V2H226V129H169Z" stroke="white" />
+          <path d="M268 65.5H287L277 44L267.5 65M239.5 129L273.5 2L326.5 129H305.5L290 93.5H268L260.5 129H239.5Z"
+            stroke="white" />
+          <path d="M341 130.5V2C419.5 2 425 40 388.5 75.5L413.5 130.5H393.5L369 75.5H359.5V130.5H341Z" stroke="white" />
+          <path
+            d="M507.683 62.0919C502.089 110.281 532.158 133.587 550.638 130.772C568.619 130.772 602.084 132.461 597.589 54.7735C595.003 10.076 570.617 2.98172 550.638 4.10762C538.651 3.35702 513.277 13.903 507.683 62.0919Z"
+            stroke="white" />
+          <path
+            d="M531.33 65.3598C528.625 88.8851 543.164 100.263 552.1 98.8888C560.794 98.8888 576.975 99.7133 574.801 61.7871C573.551 39.9662 561.76 36.5029 552.1 37.0525C546.304 36.6861 534.035 41.8346 531.33 65.3598Z"
+            stroke="white" />
+        </svg>
+      </Heading>
+
+    </Flex>
+  )
+}
