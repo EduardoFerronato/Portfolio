@@ -23,7 +23,7 @@ export const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         icon={<FiMenu />}
       />
 
-      <Avatar name="Eduardo" src="../../../public/Profile.png"/>
+      <Avatar name="Eduardo" src="/profile.png"/>
     </Flex>
   );
 };
