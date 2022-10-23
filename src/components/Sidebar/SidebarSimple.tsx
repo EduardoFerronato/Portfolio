@@ -12,9 +12,6 @@ import {
 import { SidebarContent } from './SidebarContent';
 import { MobileNav } from './MobileNav';
 
-
-
-
 export default function SideBarSimple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const bgColor = useColorModeValue('gray.100', 'gray.900')
@@ -44,7 +41,7 @@ export default function SideBarSimple() {
     );
   }
   return (
-    <Flex minH="100vh" flexDir={"column"} minW="350px" bg={bgColor}>
+    <Flex maxH="100vh" flexDir={"column"} minW="350px" bg={bgColor}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}

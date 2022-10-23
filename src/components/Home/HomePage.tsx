@@ -6,9 +6,9 @@ import { Icon } from '@iconify/react';
 export const HomePage = () => {
   return (
     <Flex>
-      <Flex width="1440px" height="100%">
+      <Flex width="100%" height="100%" >
         <SidebarSimple />
-        <Flex marginBottom="100px" flexDir="column" >
+        <Flex pb="100px" flexDir="column" overflow="auto" maxH="100vh" w="100%">
           <Header />
           <Flex flexDir="column">
             <Flex flexDir="column" mx="50" mb="5">

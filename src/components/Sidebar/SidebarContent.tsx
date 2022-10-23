@@ -37,7 +37,7 @@ export const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
             href="https://github.com/EduardoFerronato"
           >
             <Icon icon="akar-icons:github-fill" height="40" />
-            <Text>Git Hub</Text>
+            <Text>GitHub</Text>
           </Link>
         </Flex>
         <Flex bg="#0071AE" h="20" mx="5" my="3" borderRadius="5">
