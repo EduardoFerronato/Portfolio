@@ -1,10 +1,16 @@
-import { ChakraProvider, DarkMode, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider} from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
-import "./style.css"
+import { useEffect } from 'react'
+import theme from '../src/config/chakra/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+    if (typeof window !== "undefined") localStorage.setItem("chakra-ui-color-mode", "dark")
+  }, [])
+
   return (
-    <ChakraProvider theme={extendTheme({config:{useColorMode: DarkMode}})}>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )
