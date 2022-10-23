@@ -1,7 +1,7 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider} from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
-import "./style.css"
+import theme from '../src/config/chakra/theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <ChakraProvider theme={extendTheme({config:{useColorMode: "dark"}})}>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )
